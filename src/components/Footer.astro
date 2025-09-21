@@ -1,8 +1,186 @@
 ---
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/starwind/avatar";
-
 
 ---
-<footer>
-da footer
+
+<footer class="bg-slate-950">
+  <div class="flex md:hidden">
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 border-slate-400/10 border-t px-4 py-6 text-gray-400 sm:px-6 lg:px-8"
+    >
+      <nav class="text-sm">
+        <a
+          class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+          href="/info/terms-of-service"
+        >
+          Terms of Service
+        </a>
+        <a
+          class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+          href="/info/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+        <a
+          class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+          href="mailto:astrowizardy7334@gmail.com"
+        >
+          Support
+        </a>
+      </nav>
+      <div>
+        <a
+          class="group"
+          aria-label="Pirate an ikki GitHub Repo"
+          href="https://github.com/AstroWizardry/pirate-an-ikki"
+        >
+          <svg
+            class="size-6"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+            >
+            </path>
+          </svg>
+        </a>
+        <a
+          class="group"
+          aria-label="Pirate an ikki Discord"
+          href="https://discord.gg/njbm23kX"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-6"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"
+            >
+            </path>
+          </svg>
+        </a>
+        <a
+          class="group"
+          aria-label="Astro chan on X"
+          href="https://x.com/Akhu176"
+        >
+          <svg
+            class="size-6"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div>
+        <a
+          class="inline-flex items-center justify-center rounded-md font-medium text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://uploadthingstatus.com"
+        >
+          <div
+            class="size-2 rounded-full bg-green-500"
+            role="status"
+            aria-hidden="true"
+          >
+          </div>
+          <span class="ml-2"> All Systems Operational </span>
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">
+        © 2025 Astro chan. All rights reserved.
+      </p>
+    </div>
+  </div>
+  <div class="hidden md:flex">
+    <div
+      class="mx-auto flex w-full max-w-7xl flex-row items-center justify-between border-slate-400/10 border-t px-4 py-6 text-gray-400 sm:px-6 lg:px-8"
+    >
+      <div class="float-left flex">
+        <p class="text-gray-400 text-sm">
+          © 2025 Astro chan. All rights reserved.
+        </p>
+      </div><div class="-ml-32 flex text-center">
+        <nav class="text-sm" aria-label="quick links">
+          <div class="-my-1 flex justify-center gap-x-6">
+            <a
+              class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+              href="/info/terms-of-service">Terms of Service</a
+            ><a
+              class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+              href="/info/privacy-policy">Privacy Policy</a
+            ><a
+              class="inline-block rounded-lg px-2 py-1 text-secondary text-sm hover:text-primary"
+              href="mailto:astrowizardry7334@gmail.com">Support</a
+            >
+          </div>
+        </nav>
+      </div><div class="float-right flex">
+        <div class="flex items-center gap-x-6 text-gray-400">
+          <a
+            class="inline-flex items-center justify-center rounded-md font-medium text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://uploadthingstatus.com"
+            ><div
+              class="size-2 rounded-full bg-green-500"
+              role="status"
+              aria-hidden="true"
+            >
+            </div><span class="ml-2">All Systems Operational</span></a
+          ><a
+            class="group"
+            aria-label="Pirate an ikki GitHub Repo"
+            href="https://github.com/AstroWizardry/pirate-an-ikki"
+            ><svg
+              class="size-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              ><path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+              ></path></svg
+            ></a
+          ><a
+            class="group"
+            aria-label="Pirate an ikki Discord"
+            href="https://discord.gg/njbm23kX"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              ><path
+                d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"
+              ></path></svg
+            ></a
+          ><a
+            class="group"
+            aria-label="Astro chan on X"
+            href="https://x.com/Akhu176"
+            ><svg
+              class="size-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              ><path
+                d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"
+              ></path></svg
+            ></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

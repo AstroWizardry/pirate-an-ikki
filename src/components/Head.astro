@@ -1,36 +1,35 @@
 ---
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/starwind/avatar";
-
-
+import {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+} from "@/components/starwind/avatar";
 ---
 
 <header>
-
-<nav class="mx-auto flex h-24 max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8">
-  <div class="flex lg:flex-1">
-    <h1 class="relative flex select-none flex-row items-baseline font-bold text-3xl">
-      <span class="tracking-tight text-white cursor-pointer">
-        Pirate
-      </span>
-      <span>
-        An
-      </span>
-      <span class="text-primary">
-        Ikki
-      </span>
-    </h1>
-  </div>      
-  <div class="hidden flex-1 items-center justify-end gap-x-6 md:flex">
-    <div class="flex items-center gap-4">
-      <a>Item</a>
-      <a>Item</a>
-      <a>Item</a>
-      <a>Item</a>
-      <Avatar>
-        <AvatarImage src="../assets/astro.svg" alt="" />
-        <AvatarFallback>JD</AvatarFallback>
-      </Avatar>
+  <nav
+    class="mx-auto flex h-24 max-w-7xl items-center justify-between gap-x-6 p-6 text-gray-400 lg:px-8"
+  >
+    <div class="flex lg:flex-1">
+      <h1
+        class="relative flex select-none flex-row items-baseline font-bold text-3xl"
+      >
+        <span class="tracking-tight text-white cursor-pointer"> Pirate </span>
+        <span> An </span>
+        <span class="text-primary"> Ikki </span>
+      </h1>
     </div>
-  </div>   
-</nav>
+    <div class="hidden flex-1 items-center justify-end gap-x-6 md:flex">
+      <div class="flex items-center gap-4">
+        <a><span class="cursor-pointer font-semibold text-sm text-white leading-6">Browse</span></a>
+        <a><span class="cursor-pointer font-semibold text-sm text-white leading-6">Library</span></a>
+        <a><span class="cursor-pointer font-semibold text-sm text-white leading-6">About</span></a>
+        <a><span class="cursor-pointer font-semibold text-sm text-white leading-6">Contact</span></a>
+        <Avatar>
+          <AvatarImage src="../assets/astro.svg" alt="" />
+          <AvatarFallback>JD</AvatarFallback>
+        </Avatar>
+      </div>
+    </div>
+  </nav>
 </header>
