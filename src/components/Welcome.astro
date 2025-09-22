@@ -1,59 +1,54 @@
 ---
-import { Image } from 'astro:assets'
-import ikkiChan from '../assets/ikki-chan.png'
+import { Image } from "astro:assets";
+import kiwiChan from "../assets/kiwi-chan.webp";
 ---
 
-<div class="lg:grid lg:grid-cols-2 lg:gap-8">
-	<div
-		class="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left"
-	>
-		<div class="flex flex-col pb-8">
-			<h1
-				class="mt-4 font-bold text-4xl text-white tracking-tight sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
-			>
-				<span class="block">The better e-reader</span><span
-					class="block pb-3 text-primary sm:pb-5">for oomfies 😇</span>
-			</h1><p class="text-gray-300 text-lg lg:text-md">
-				oomfies deserve better manga/doujinshi reader, that's why I made Astro Chan made pirate an ikki UWU, the better (and superior) alternative to 99.9% of manga/doujinshi websites online.
-			</p><div
-				class="relative mt-4 flex w-full flex-col items-stretch justify-stretch gap-2 sm:justify-center md:flex-row lg:justify-start"
-			>
-				<a
-					class="line-clamp-1 flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-center font-bold text-base text-white shadow-sm hover:bg-primary/80"
-					href="/dashboard">Get Started for Free</a
-				><a
-					href="https://docs.uploadthing.com"
-					target="_blank"
-					rel="noreferrer"
-					class="line-clamp-1 flex items-center justify-center gap-2 px-6 py-3 text-center font-bold text-base text-white shadow-sm hover:text-primary/80"
-					>Documentation →</a>
-			</div>
-		</div>
-	</div><div class="-mb-16 sm:-mb-48 mt-12 hidden lg:relative lg:m-0 lg:block">
+<div class="mx-auto max-w-7xl pb-4 md:pb-0 lg:px-8">
+	<div class="lg:grid lg:grid-cols-2 lg:gap-8">
 		<div
-			class="mx-auto max-w-md px-6 text-white sm:max-w-2xl lg:max-w-none lg:px-0"
+			class="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:max-w7xl container lg:flex lg:items-center lg:px-0 lg:text-left"
 		>
-			<div class="relative flex h-[700px] w-[700px]">
-				<div class="h-[700px] w-[700px] block z-10">
-					<div class="" style="width: 100%; height: 100%;">
-						<canvas
-							style="vertical-align: top; width: 0px; height: 0px;"
-							width="0"
-							height="0"></canvas>
-					</div>
-				</div><div
-					class="absolute left-[14px] h-[700px] w-[700x] animate-fade-in overflow-hidden fade-out animate-out duration-500 opacity-0"
+			<div class="flex flex-col pb-8">
+				<h1
+					class="mt-4 font-bold text-4xl text-white tracking-tight sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
 				>
+					<span class="block">The better e-reader</span><span
+						class="block pb-3 text-primary sm:pb-5">for oomfies 😇</span
+					>
+				</h1><p class="text-gray-300 text-lg lg:text-md">
+					oomfies deserve better manga/doujinshi reader, that's why Astro Chan
+					made pirate an ikki UWU, the better (and superior) alternative to
+					99.9% of manga/doujinshi websites online.
+				</p><div
+					class="relative mt-4 flex w-full flex-col items-stretch justify-stretch gap-2 sm:justify-center md:flex-row lg:justify-start"
+				>
+					<a
+						class="line-clamp-1 flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-center font-bold text-base text-white shadow-sm hover:bg-primary/80"
+						href="/dashboard">Get Started for Free</a
+					><a
+						href="https://docs.uploadthing.com"
+						target="_blank"
+						rel="noreferrer"
+						class="line-clamp-1 flex items-center justify-center gap-2 px-6 py-3 text-center font-bold text-base text-white shadow-sm hover:text-primary/80"
+						>Documentation →</a
+					>
+				</div>
+			</div>
+		</div><div
+			class="-mb-16 sm:-mb-48 mt-12 hidden lg:relative lg:m-0 lg:block"
+		>
+			<div
+				class="mx-auto max-w-md px-6 text-white sm:max-w-2xl lg:max-w-none lg:px-0"
+			>
 					<Image
 						alt="Kawaii pic of ikki chan"
 						loading="lazy"
 						decoding="async"
-						width="400"
-						height="400"
+						width="500"
+						height="500"
 						style="color: transparent;"
-						src={ikkiChan}
+						src={kiwiChan}
 					/>
-				</div>
 			</div>
 		</div>
 	</div>
